@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite it as below (and the article it accompanies once published)."
+type: software
+title: "CatFORGE reproducibility package"
+abstract: >-
+  Code, data and stored results that regenerate every figure, table and number in the Results of the manuscript
+  describing CatFORGE, a browser-based platform for data-guided, cost-aware catalyst design: the synthetic-data
+  augmentation benchmark, the held-out predictor benchmark, SHAP explanations, cost-aware ranking and laboratory
+  comparisons. Includes the evaluated versions of the platform's prediction, optimization and synthesis modules.
+version: 1.0.0
+date-released: "2026-11-22"
+license: MIT
+doi: "10.5281/zenodo.XXXXXXX"
+authors:
+  - family-names: Elshenawy
+    given-names: Basel
+    affiliation: Ulster University
+  - family-names: Khan
+    given-names: Mohammed Qasim Ali
+    affiliation: Toronto Metropolitan University
+  - family-names: Varlani
+    given-names: Mahip
+    affiliation: Western University
+  - family-names: Abotaleb
+    given-names: Ahmed
+    affiliation: "Qatar Environment and Energy Research Institute, Hamad Bin Khalifa University"
+  - family-names: Elshrif
+    given-names: Mohamed
+    affiliation: "Qatar Computing Research Institute, Hamad Bin Khalifa University"
+keywords:
+  - catalysis
+  - catalyst design
+  - machine learning
+  - synthetic data
+  - techno-economic analysis
+  - reproducibility

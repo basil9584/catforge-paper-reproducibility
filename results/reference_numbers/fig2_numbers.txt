@@ -1,0 +1,46 @@
+catforge_aug rel_delta range (all main cells): -3.9 12.8
+catforge_aug cells within +-2%: 21 of 30
+catforge_aug cells whose CI excludes 0 (improve / worsen): 2 4
+drm clustered 25 catforge_aug 12.8 [np.float64(7.2), np.float64(19.8)]
+drm clustered 50 catforge_aug 8.7 [np.float64(4.5), np.float64(13.7)]
+wgs random 25 catforge_aug 5.1 [np.float64(1.1), np.float64(9.2)]
+wgs random 50 catforge_aug 3.4 [np.float64(0.4), np.float64(6.3)]
+synth_only worse in 29 of 30 ; max 105.8 ; min -0.7
+{'dataset': 'wgs', 'sampling': 'clustered', 'size': 100, 'rel_delta_pct': -0.6603938319146759, 'ci_low': -9.077496648748024, 'ci_high': 8.646345426673863}
+mean |catforge - gaussian copula| (pct points): 1.25
+ablation worst (max) rel_delta by generator: {'catforge_aug_r0.5': 2.0, 'catforge_aug_r1': 2.1, 'catforge_aug_r2': 2.0, 'catforge_aug_r4': 3.4, 'ctgan_aug_r1': 10.6, 'gc_aug_r1': 2.9, 'tvae_aug_r1': 6.1}
+ablation quality range by generator: {'catforge_aug_r0.5': {'min': 0.562, 'max': 0.869}, 'catforge_aug_r1': {'min': 0.565, 'max': 0.877}, 'catforge_aug_r2': {'min': 0.565, 'max': 0.883}, 'catforge_aug_r4': {'min': 0.565, 'max': 0.883}, 'ctgan_aug_r1': {'min': 0.651, 'max': 0.776}, 'gc_aug_r1': {'min': 0.608, 'max': 0.892}, 'tvae_aug_r1': {'min': 0.746, 'max': 0.825}}
+   dataset      grid   sampling                arm  mean_within_size_spearman  quality_mean  n_training_sets
+0      drm  ablation     random  catforge_aug_r0.5                     -0.462         0.847               30
+1      drm  ablation     random    catforge_aug_r1                     -0.523         0.859               30
+2      drm  ablation     random    catforge_aug_r2                     -0.512         0.866               30
+3      drm  ablation     random    catforge_aug_r4                     -0.446         0.868               30
+4      drm  ablation     random       ctgan_aug_r1                     -0.393         0.672               30
+5      drm  ablation     random          gc_aug_r1                     -0.445         0.868               30
+6      drm  ablation     random        tvae_aug_r1                     -0.389         0.812               30
+7      drm      main  clustered       catforge_aug                     -0.373         0.815               75
+8      drm      main  clustered             gc_aug                     -0.079         0.838               75
+9      drm      main     random       catforge_aug                     -0.266         0.844               75
+10     drm      main     random             gc_aug                     -0.364         0.875               75
+11     ocm  ablation     random  catforge_aug_r0.5                     -0.088         0.579               30
+12     ocm  ablation     random    catforge_aug_r1                     -0.089         0.583               30
+13     ocm  ablation     random    catforge_aug_r2                      0.046         0.586               30
+14     ocm  ablation     random    catforge_aug_r4                     -0.014         0.586               30
+15     ocm  ablation     random       ctgan_aug_r1                     -0.175         0.659               30
+16     ocm  ablation     random          gc_aug_r1                     -0.043         0.619               30
+17     ocm  ablation     random        tvae_aug_r1                      0.129         0.747               30
+18     ocm      main  clustered       catforge_aug                     -0.089         0.610               75
+19     ocm      main  clustered             gc_aug                     -0.152         0.661               75
+20     ocm      main     random       catforge_aug                     -0.112         0.583               75
+21     ocm      main     random             gc_aug                     -0.003         0.633               75
+22     wgs  ablation     random  catforge_aug_r0.5                     -0.086         0.673               30
+23     wgs  ablation     random    catforge_aug_r1                     -0.012         0.676               30
+24     wgs  ablation     random    catforge_aug_r2                      0.055         0.678               30
+25     wgs  ablation     random    catforge_aug_r4                      0.034         0.679               30
+26     wgs  ablation     random       ctgan_aug_r1                      0.034         0.774               30
+27     wgs  ablation     random          gc_aug_r1                      0.234         0.704               30
+28     wgs  ablation     random        tvae_aug_r1                      0.323         0.792               30
+29     wgs      main  clustered       catforge_aug                      0.001         0.848               75
+30     wgs      main  clustered             gc_aug                      0.226         0.875               75
+31     wgs      main     random       catforge_aug                     -0.088         0.681               75
+32     wgs      main     random             gc_aug                      0.184         0.708               75

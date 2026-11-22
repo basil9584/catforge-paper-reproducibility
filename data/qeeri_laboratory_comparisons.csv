@@ -1,0 +1,22 @@
+﻿case,source_pdf_page,response,measured,predicted,signed_difference_prediction_minus_measured,absolute_difference,difference_unit,relative_absolute_error_percent,note
+NiHT-600 separate case,18-19,CH4 conversion (%),68.5,66.32,-2.18,2.18,percentage points,3.1825,condition mismatch: prose20h vs capture12h
+NiHT-600 separate case,18-19,CO2 conversion (%),84.5,83.65,-0.85,0.85,percentage points,1.0059,condition mismatch: prose20h vs capture12h
+NiHT-600 separate case,18-19,H2/CO,0.81,0.978,0.168,0.168,ratio units,20.7407,condition mismatch: prose20h vs capture12h
+NiHT higher severity,19-20,CH4 conversion (%),79.40,85.26,5.86,5.86,percentage points,7.3804,retrospective comparison; run linkage pending
+NiHT higher severity,19-20,CO2 conversion (%),91.43,89.23,-2.20,2.20,percentage points,2.4062,retrospective comparison; run linkage pending
+NiHT higher severity,19-20,H2/CO lower bound,0.79,0.9799,0.1899,0.1899,ratio units,24.0380,measured range0.79-0.80; this is endpoint difference
+NiHT higher severity,19-20,H2/CO upper bound,0.80,0.9799,0.1799,0.1799,ratio units,22.4875,measured range0.79-0.80; this is endpoint difference
+Ni-AC,21,CH4 conversion (%),33.82,38.35,4.53,4.53,percentage points,13.3944,retrospective comparison; run linkage pending
+Ni-AC,21,CO2 conversion (%),48.11,47.81,-0.30,0.30,percentage points,0.6236,retrospective comparison; run linkage pending
+Ni-AC,21,H2/CO,0.65,0.266,-0.384,0.384,ratio units,59.0769,retrospective comparison; run linkage pending
+Ni-alumina Flowrence,23,CH4 conversion (%),69.82,68.13,-1.69,1.69,percentage points,2.4205,50mg;800C;30000mL/g/h;7h;feed1:1
+Ni-alumina Flowrence,23,CO2 conversion (%),83.39,76.59,-6.80,6.80,percentage points,8.1545,50mg;800C;30000mL/g/h;7h;feed1:1
+Ni-alumina Flowrence,23,H2/CO,0.8061,0.8370,0.0309,0.0309,ratio units,3.8333,50mg;800C;30000mL/g/h;7h;feed1:1
+NiHT-300 calcination series,53-55,CH4 conversion (%),64.3,75.0,10.7,10.7,percentage points,16.6407,separate experimental series
+NiHT-300 calcination series,53-55,CO2 conversion (%),80.9,82.4,1.5,1.5,percentage points,1.8541,separate experimental series
+NiHT-600 calcination series,53-55,CH4 conversion (%),72.7,72.7,0.0,0.0,percentage points,0.0000,separate experimental series
+NiHT-600 calcination series,53-55,CO2 conversion (%),88.3,76.1,-12.2,12.2,percentage points,13.8165,separate experimental series
+NiHT-700 calcination series,53-55,CH4 conversion (%),63.6,69.0,5.4,5.4,percentage points,8.4906,separate experimental series
+NiHT-700 calcination series,53-55,CO2 conversion (%),81.3,75.2,-6.1,6.1,percentage points,7.5031,separate experimental series
+NiHT-900 calcination series,53-55,CH4 conversion (%),56.8,68.1,11.3,11.3,percentage points,19.8944,separate experimental series
+NiHT-900 calcination series,53-55,CO2 conversion (%),76.4,72.6,-3.8,3.8,percentage points,4.9738,separate experimental series

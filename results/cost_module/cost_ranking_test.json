@@ -1,0 +1,245 @@
+{
+  "S0_fixed_quantities": {
+    "record_cost": {
+      "min": 69.0124,
+      "max": 69.0124,
+      "n_unique": 1
+    },
+    "candidate_cost": {
+      "min": 69.0124,
+      "max": 69.0124,
+      "n_unique": 1
+    }
+  },
+  "S1_linked_materials_only": {
+    "record_cost": {
+      "min": 1.1612,
+      "max": 19.5525,
+      "n_unique": 233
+    },
+    "candidate_cost": {
+      "min": 1.0688,
+      "max": 17.163,
+      "n_unique": 10
+    },
+    "spearman_cost_vs_Ni_records": 1.0,
+    "preview": {
+      "unit_cost_per_kg": 4.1186,
+      "total_annual_cost": 4118.57,
+      "cost_breakdown_percent": {
+        "materials": 53.333333333333336,
+        "capex": 0.0,
+        "opex": 100.0,
+        "spent_cat": 0.0
+      },
+      "per_record_cost": {
+        "min": 1.1612,
+        "median": 4.1186,
+        "max": 19.5525,
+        "n_records": 1636,
+        "n_missing": 1
+      }
+    },
+    "by_cost_weight": {
+      "0.0": {
+        "top10_mean_Ni_loading": 8.74,
+        "top10_mean_cost": 3.76,
+        "top10_mean_CH4_pred": 98.3,
+        "candidate_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_pareto": 12
+      },
+      "None": {
+        "top10_mean_Ni_loading": 1.95,
+        "top10_mean_cost": 1.669,
+        "top10_mean_CH4_pred": 93.4,
+        "candidate_order": [
+          0,
+          5,
+          4,
+          7,
+          1,
+          8,
+          6,
+          2,
+          9,
+          3
+        ],
+        "n_pareto": 12
+      },
+      "1.0": {
+        "top10_mean_Ni_loading": 1.95,
+        "top10_mean_cost": 1.669,
+        "top10_mean_CH4_pred": 93.4,
+        "candidate_order": [
+          0,
+          5,
+          4,
+          7,
+          1,
+          8,
+          6,
+          2,
+          9,
+          3
+        ],
+        "n_pareto": 12
+      },
+      "3.0": {
+        "top10_mean_Ni_loading": 1.37,
+        "top10_mean_cost": 1.49,
+        "top10_mean_CH4_pred": 89.2,
+        "candidate_order": [
+          5,
+          4,
+          7,
+          0,
+          8,
+          1,
+          6,
+          9,
+          2,
+          3
+        ],
+        "n_pareto": 12
+      }
+    }
+  },
+  "S2_with_fixed_costs": {
+    "record_cost": {
+      "min": 22.3199,
+      "max": 40.7112,
+      "n_unique": 233
+    },
+    "relative_spread_pct": 72.8,
+    "preview": {
+      "unit_cost_per_kg": 25.2773,
+      "total_annual_cost": 252772.94,
+      "cost_breakdown_percent": {
+        "materials": 8.689893869671076,
+        "capex": 14.540322379249954,
+        "opex": 85.45967762075006,
+        "spent_cat": 0.0
+      },
+      "per_record_cost": {
+        "min": 22.3199,
+        "median": 25.2773,
+        "max": 40.7112,
+        "n_records": 1636,
+        "n_missing": 1
+      }
+    },
+    "by_cost_weight": {
+      "None": {
+        "top10_mean_Ni_loading": 3.4,
+        "top10_mean_cost": 23.276
+      },
+      "3.0": {
+        "top10_mean_Ni_loading": 2.7,
+        "top10_mean_cost": 23.059
+      }
+    }
+  },
+  "S3_small": {
+    "n_candidates": 30,
+    "candidate_cost": {
+      "min": 1.9942,
+      "max": 2.5009,
+      "n_unique": 21
+    }
+  },
+  "checks": [
+    {
+      "check": "S0 same record costs as the original module",
+      "pass": true,
+      "detail": "old {'min': 69.0124, 'max': 69.0124, 'n_unique': 1}, new {'min': 69.0124, 'max': 69.0124, 'n_unique': 1}"
+    },
+    {
+      "check": "S0 same step-7 ranking as the original module",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "S1 record costs differ",
+      "pass": true,
+      "detail": "{'min': 1.1612, 'max': 19.5525, 'n_unique': 233}"
+    },
+    {
+      "check": "S1 record cost rises with nickel loading",
+      "pass": true,
+      "detail": "Spearman 1.0000"
+    },
+    {
+      "check": "S1 candidate costs differ",
+      "pass": true,
+      "detail": "{'min': 1.0688, 'max': 17.163, 'n_unique': 10}"
+    },
+    {
+      "check": "S1 candidate cost rises with nickel loading",
+      "pass": true,
+      "detail": "Spearman 1.0000"
+    },
+    {
+      "check": "S1 hand calculation for record 0",
+      "pass": true,
+      "detail": "expected 4.1494, got 4.1494"
+    },
+    {
+      "check": "S1 preview reports the per-record range",
+      "pass": true,
+      "detail": "{'min': 1.1612, 'median': 4.1186, 'max': 19.5525, 'n_records': 1636, 'n_missing': 1}"
+    },
+    {
+      "check": "S1 cost weight changes the top-10 (0 vs 3)",
+      "pass": true,
+      "detail": "mean Ni loading of top 10: w=0 8.74, w=avg 1.95, w=3 1.37"
+    },
+    {
+      "check": "S1 higher cost weight gives a cheaper top 10",
+      "pass": true,
+      "detail": "w=0 3.76, w=3 1.49 US$/kg"
+    },
+    {
+      "check": "S2 runs with interface-format labour, equipment and lab items",
+      "pass": true,
+      "detail": "{'min': 22.3199, 'max': 40.7112, 'n_unique': 233}, spread 72.8% of median"
+    },
+    {
+      "check": "S3 small-data candidates get their own cost",
+      "pass": true,
+      "detail": "30 candidates, {'min': 1.9942, 'max': 2.5009, 'n_unique': 21}"
+    },
+    {
+      "check": "S4 overridden record 0 costs twice its composition cost",
+      "pass": true,
+      "detail": "4.1494 -> 8.2988"
+    },
+    {
+      "check": "S4 record 1 (override equal to reference) unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "S5 record without a linked value uses the median record's cost",
+      "pass": true,
+      "detail": "cost 4.1186, median record 4.11856875"
+    },
+    {
+      "check": "S6 warning for a link to a non-input column",
+      "pass": true,
+      "detail": "'Ni (metal value)' is linked to 'CO2 Conversion', which is not a model input: suggested candidates will use the median record's cost."
+    }
+  ],
+  "n_pass": 16,
+  "n_checks": 16
+}

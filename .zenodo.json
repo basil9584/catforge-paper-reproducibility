@@ -1,0 +1,15 @@
+{
+  "title": "CatFORGE reproducibility package",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "license": "mit",
+  "description": "Code, data and stored results that regenerate every figure, table and number in the Results of the manuscript describing CatFORGE, a browser-based platform for data-guided, cost-aware catalyst design: the synthetic-data augmentation benchmark (DRM, water-gas shift and oxidative coupling of methane literature compilations held out by publication, reference or element set), the held-out benchmark of the platform's predictor against ten baselines, SHAP explanations, cost-aware candidate ranking and laboratory comparisons. Includes the evaluated versions of the platform's prediction, optimization and synthesis modules. One command (python reproduce.py --figures --check) regenerates the figures and checks every reported number. The web interface of the platform is not included.",
+  "creators": [
+    {"name": "Elshenawy, Basel", "affiliation": "Ulster University"},
+    {"name": "Khan, Mohammed Qasim Ali", "affiliation": "Toronto Metropolitan University"},
+    {"name": "Varlani, Mahip", "affiliation": "Western University"},
+    {"name": "Abotaleb, Ahmed", "affiliation": "Qatar Environment and Energy Research Institute, Hamad Bin Khalifa University"},
+    {"name": "Elshrif, Mohamed", "affiliation": "Qatar Computing Research Institute, Hamad Bin Khalifa University"}
+  ],
+  "keywords": ["catalysis", "catalyst design", "machine learning", "synthetic data", "techno-economic analysis", "reproducibility"]
+}

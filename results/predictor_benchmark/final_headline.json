@@ -1,0 +1,53 @@
+{
+  "catforge_v1|full|vs_best_other": {
+    "LOSS": 5,
+    "TIE": 2
+  },
+  "catforge_v1|full|vs_lgbm": {
+    "LOSS": 5,
+    "WIN": 1,
+    "TIE": 1
+  },
+  "catforge_v1|200|vs_best_other": {
+    "LOSS": 4,
+    "TIE": 3
+  },
+  "catforge_v1|200|vs_lgbm": {
+    "LOSS": 4,
+    "TIE": 3
+  },
+  "catforge_v1|50|vs_best_other": {
+    "LOSS": 4,
+    "TIE": 3
+  },
+  "catforge_v1|50|vs_lgbm": {
+    "LOSS": 4,
+    "WIN": 3
+  },
+  "catforge_v2|full|vs_best_other": {
+    "TIE": 4,
+    "LOSS": 3
+  },
+  "catforge_v2|full|vs_lgbm": {
+    "TIE": 4,
+    "LOSS": 2,
+    "WIN": 1
+  },
+  "catforge_v2|200|vs_best_other": {
+    "TIE": 5,
+    "LOSS": 2
+  },
+  "catforge_v2|200|vs_lgbm": {
+    "TIE": 6,
+    "LOSS": 1
+  },
+  "catforge_v2|50|vs_best_other": {
+    "LOSS": 4,
+    "TIE": 3
+  },
+  "catforge_v2|50|vs_lgbm": {
+    "WIN": 3,
+    "LOSS": 2,
+    "TIE": 2
+  }
+}

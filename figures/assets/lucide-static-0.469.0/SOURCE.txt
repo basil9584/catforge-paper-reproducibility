@@ -1,0 +1,11 @@
+Lucide icons used in Figure 1, downloaded 2026-11-22 for figures/fig1_pipeline.py (via figures/fig1_icons.py).
+
+Package : lucide-static 0.469.0 (npm), https://lucide.dev, https://github.com/lucide-icons/lucide
+Licence : ISC (see LICENSE in this folder); portions MIT from Feather (Cole Bemis)
+Source  : https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/icons/<name>.svg
+          https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/LICENSE
+          https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/package.json
+Icons   : book-open, database, flame, flask-conical, leaf, microscope, thermometer, user-round
+Use     : the SVG files are parsed as XML data only (fig1_icons.py) and redrawn as vector paths in a
+          single line style; nothing downloaded is executed. Unused icons from the first download were deleted.
+          The SVG files, LICENSE and package.json are kept as downloaded.

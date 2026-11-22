@@ -1,0 +1,22 @@
+records 1564 publications 204
+share of mean |SHAP| (%):
+                            CH4 Conversion  CO2 Conversion  Syngas_Ratio
+Reaction Temperature             39.299999       42.099998          23.0
+Ratio of CH4 in Feed             10.900000        6.900000           7.2
+GHSV                             10.100000       10.000000          14.4
+Ni Particle Size                  7.100000        8.500000          11.2
+Surface Area                      6.600000        4.600000           7.9
+Pore Volume                       6.500000        8.500000           8.4
+Pore Size                         4.800000        4.500000           6.9
+Ni Loading                        4.600000        3.300000           8.7
+H2-TPR Peak Temperature           4.500000        6.600000           8.1
+Reaction Time                     3.600000        4.500000           3.0
+Modifier Electronegativity        1.900000        0.500000           1.1
+CH4 Conversion top feature Reaction Temperature fold ranks of top feature: [1, 1, 1, 1, 1]
+CO2 Conversion top feature Reaction Temperature fold ranks of top feature: [1, 1, 1, 1, 1]
+Syngas_Ratio top feature Reaction Temperature fold ranks of top feature: [1, 1, 1, 1, 1]
+Reaction Temperature Spearman(feature, SHAP for CH4): 0.96
+GHSV Spearman(feature, SHAP for CH4): -0.74
+Ni Loading Spearman(feature, SHAP for CH4): 0.26
+proxy R2 in-sample: [0.919 0.922 0.854] group-held-out: [0.459 0.489 0.161]
+temperature range: 400.0 1000.0 | GHSV range: 1700.0 960000.0

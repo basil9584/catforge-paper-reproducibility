@@ -1,0 +1,25 @@
+# Packages imported by the code in this package, at the exact versions used for the manuscript
+# (Python 3.12.10, Windows 11, x86-64). requirements-lock.txt pins the complete environment, including indirect
+# dependencies; use it for the closest possible re-run of the benchmarks.
+#
+# torch is only needed for the benchmark re-runs (--quick, --benchmarks); the figures and checks do not use it.
+# It is the CPU build from the PyTorch package index (line below). On macOS use torch==2.13.0 instead.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+numpy==2.5.2
+pandas==2.3.3
+scipy==1.18.1
+scikit-learn==1.9.0
+xgboost==3.4.1
+lightgbm==4.7.0
+matplotlib==3.11.2
+pillow==13.0.0
+joblib==1.6.0
+svgpath2mpl==1.0.0
+optuna==4.9.0
+sdv==1.38.2
+sdmetrics==0.30.0
+torch==2.13.0+cpu
+
+# Not needed: shap (catforge/generalized_predictor.py imports it, but only for explanation plots; the benchmark
+# scripts provide a stub in benchmark/_stubs/) and lime (optional; the module prints a warning if it is missing).
