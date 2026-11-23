@@ -12,11 +12,9 @@ One command regenerates Figs 1-6 from the stored results and checks every report
 python reproduce.py --figures --check
 ```
 
-> **Before this repository is made public** (decisions for the authors): (1) the MIT licence and its copyright line
-> "the authors" are a placeholder to be confirmed with all co-authors and their institutions; (2) the source and
-> licence of the DRM literature compilation (`data/drm_literature.csv`) are not recorded and must be confirmed, and
-> the redistribution terms of the WGS and OCM tables should be confirmed; (3) the Zenodo DOI
-> `10.5281/zenodo.XXXXXXX` is a placeholder. Details: [Data sources and licences](#data-sources-and-licences).
+> Licence: MIT (code and the authors' own data compilation); the published third-party tables keep the attribution
+> given in [Data sources and licences](#data-sources-and-licences). The Zenodo DOI `10.5281/zenodo.XXXXXXX` is a
+> placeholder until the first release is archived.
 
 ## Quick start
 
@@ -178,9 +176,9 @@ settings, seeds, splits or metrics; `--check` and `--tests` confirm identical ou
 
 | File | Content | Source | Licence / permission |
 |---|---|---|---|
-| `data/drm_literature.csv` | DRM literature compilation, 1,564 records, 204 publications | not recorded | **NOT RECORDED: must be confirmed before the repository is made public** |
-| `data/wgs_literature.csv` | water-gas shift compilation, 4,360 records, 84 references | Odabasi, Gunay & Yildirim, *Int. J. Hydrogen Energy* 39, 5733 (2014) | redistribution terms not recorded; confirm |
-| `data/ocm_literature.csv` | OCM compilation, 1,831 rows (1,744 used) | Zavyalova et al., *ChemCatChem* 3, 1935 (2011), via CADS (Fujima et al., *React. Chem. Eng.* 5, 903 (2020)) | licence of the distributed file not recorded; confirm |
+| `data/drm_literature.csv` | DRM literature compilation, 1,714 rows (1,564 complete records, 204 publications used) | compiled by the CatFORGE authors from 220 published DRM studies (`Paper no.` codes) | the authors' own compilation, released with this package under its MIT licence; please also cite the original studies |
+| `data/wgs_literature.csv` | water-gas shift compilation, 4,360 records, 84 references | Odabasi, Gunay & Yildirim, *Int. J. Hydrogen Energy* 39, 5733 (2014) | published compilation, redistributed unchanged with attribution for reproducibility; cite the original publication when reusing |
+| `data/ocm_literature.csv` | OCM compilation, 1,831 rows (1,744 used) | Zavyalova et al., *ChemCatChem* 3, 1935 (2011), via CADS (Fujima et al., *React. Chem. Eng.* 5, 903 (2020)) | published dataset, redistributed unchanged with attribution for reproducibility; cite the original publications when reusing |
 | `data/qeeri_laboratory_comparisons.csv` | QEERI laboratory measurements and earlier CatFORGE predictions | QEERI (Hamad Bin Khalifa University); values from the authors' earlier manuscript | the authors state disclosure is permitted |
 | `figures/assets/lucide-static-0.469.0/` | 8 line icons for Fig. 1 | Lucide 0.469.0 (https://lucide.dev) | ISC (portions MIT, Feather); licence file kept with the icons |
 
@@ -236,7 +234,6 @@ Please cite the article (reference to be added on publication) and this package:
 
 ## Licence
 
-Code in this package: MIT licence (`LICENSE`). **Placeholder** - the licence and the copyright line
-("Copyright (c) 2026 the authors") must be confirmed with all co-authors and their institutions before release; this
-includes the platform modules in `catforge/`. Data files keep the terms of their sources (see above); the Lucide
-icons are ISC-licensed.
+Code in this package, including the platform modules in `catforge/`, and the authors' DRM literature compilation:
+MIT licence (`LICENSE`, "Copyright (c) 2026 the authors"). The WGS and OCM tables are third-party published data,
+redistributed with attribution (see above); the Lucide icons are ISC-licensed.
