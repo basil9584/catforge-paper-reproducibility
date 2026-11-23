@@ -1,5 +1,7 @@
 # CatFORGE reproducibility package
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24452477.svg)](https://doi.org/10.5281/zenodo.24452477)
+
 This package regenerates every figure, table and number in the **Results** of the manuscript that describes
 CatFORGE, a browser-based platform for data-guided, cost-aware catalyst design. It contains the analysis code, the
 evaluated versions of the three platform modules the results depend on, the datasets the analyses read, and the
@@ -13,8 +15,8 @@ python reproduce.py --figures --check
 ```
 
 > Licence: MIT (code and the authors' own data compilation); the published third-party tables keep the attribution
-> given in [Data sources and licences](#data-sources-and-licences). The Zenodo DOI `10.5281/zenodo.XXXXXXX` is a
-> placeholder until the first release is archived.
+> given in [Data sources and licences](#data-sources-and-licences). Archived on Zenodo: version 1.0.0,
+> https://doi.org/10.5281/zenodo.24452477 (all versions: https://doi.org/10.5281/zenodo.24452476).
 
 ## Quick start
 
@@ -228,9 +230,10 @@ Details in `data/README.md`.
 Please cite the article (reference to be added on publication) and this package:
 
 > Elshenawy, B., Khan, M. Q. A., Varlani, M., Abotaleb, A. & Elshrif, M. CatFORGE reproducibility package (version
-> 1.0.0). Zenodo https://doi.org/10.5281/zenodo.XXXXXXX (2026).
+> 1.0.0). Zenodo https://doi.org/10.5281/zenodo.24452477 (2026).
 
-`CITATION.cff` and `.zenodo.json` hold the same metadata. The DOI is a placeholder until the Zenodo record is published.
+`CITATION.cff` and `.zenodo.json` hold the same metadata. The DOI above identifies version 1.0.0; the concept DOI
+https://doi.org/10.5281/zenodo.24452476 always resolves to the latest version.
 
 ## Licence
 

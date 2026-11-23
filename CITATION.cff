@@ -10,7 +10,7 @@ abstract: >-
 version: 1.0.0
 date-released: "2026-11-22"
 license: MIT
-doi: "10.5281/zenodo.XXXXXXX"
+doi: "10.5281/zenodo.24452477"
 authors:
   - family-names: Elshenawy
     given-names: Basel
